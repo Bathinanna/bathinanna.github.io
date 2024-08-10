@@ -1,27 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-:root {
+:root{
     --background-color: #333647;
     --pink-color: #f87652;
     --secondary-color: #bbbbbb;
 }
-
-* {
+*{
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
 
-body {
+body{
     background-color: var(--background-color) !important;
-    margin: 0;
-    padding: 0;
+;
 }
-
-h1, h2, h3, h4, h5, h6, p, span, td, a {
+h1,h2,h3,h4,h5,h6,p,span,td,a{
     cursor: pointer;
 }
-
-canvas.particles-js-canvas-el {
+canvas.particles-js-canvas-el{
     position: absolute;
     height: 100% !important;
     width: 100%;
@@ -29,30 +23,24 @@ canvas.particles-js-canvas-el {
     right: 0;
     left: 0;
     z-index: -10000;
-    margin: 0;
+    margin: 0px;
 }
 
-.hero_section {
-    padding: 50px 0;
-}
-
-.hero_section .row {
+.hero_section .row{
     display: flex;
     align-items: center;
     height: 100vh;
 }
-
-.hero_section .row h1, h2, h3, p {
+.hero_section .row h1,h2,h3,p{
     color: white;
 }
-
-.hero_section .row h3 {
+.hero_section .row h3{
     font-size: 19px;
-    font-weight: 300;
+    font-weight: 30px;
     margin-bottom: 15px;
-}
 
-.hero_section .row h3::after {
+}
+.hero_section .row h3::after{
     content: '';
     position: absolute;
     text-align: center;
@@ -62,26 +50,22 @@ canvas.particles-js-canvas-el {
     background-color: white;
     margin-left: 6px;
 }
-
-.hero_section .row h1 {
+.hero_section .row h1{
     font-size: 65px;
     font-weight: 800;
-}
 
-.hero_section .row h2 {
+}.hero_section .row h2{
     font-size: 20px;
     font-weight: 100;
-    margin: 8px 0;
+    margin: 8px 0px;
 }
-
-.hero_section .row p {
+.hero_section .row p{
     font-size: 13px;
     margin-top: 13px;
     line-height: 21px;
     color: var(--secondary-color);
 }
-
-.hero_section .row button {
+.hero_section .row button{
     border-radius: 10px;
     font-size: 19px;
     color: white;
@@ -91,173 +75,76 @@ canvas.particles-js-canvas-el {
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
 }
-
-.hero_section .row button:hover {
+.hero_section .row button:hover{
     animation: swing;
     animation-duration: 0.5s;
     background: white;
     color: black;
     border-color: white;
 }
-
-.hero_section .row img {
+.hero_section .row img{
     width: 80%;
     border-radius: 50%;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) and (min-width: 993px) {
-    .hero_section .row h1 {
+@media (max-width: 1200px) and (min-width: 993px){
+    .hero_section .row h1{
         font-size: 58px;
     }
 }
-
-@media (max-width: 993px) and (min-width: 763px) {
+@media (max-width: 993px) and (min-width: 763px){
     .hero_section .row h1 {
         font-size: 42px;
     }
-
-    .hero_section .row h2 {
+    .hero_section .row h2{
         font-size: 15px;
     }
-
-    .hero_section .row p {
+    .hero_section .row p{
         font-size: 11px;
     }
-
-    .hero_section .row h3 {
+    .hero_section .row h3{
         font-size: 15px;
     }
-
-    .hero_section .row button {
+    .hero_section .row button{
         font-size: 15px;
     }
 }
-
-@media (max-width: 763px) and (min-width: 500px) {
+@media (max-width: 763px) and (min-width: 500px){
     .hero_section {
-        margin: 55px 0;
+        margin: 55px 0px;
     }
-
     .hero_section .row h1 {
         font-size: 46px;
         text-align: center;
     }
-
-    .hero_section .row h2 {
+    .hero_section .row h2{
         font-size: 15px;
         text-align: center;
     }
-
-    .hero_section .row p {
+    .hero_section .row p{
         font-size: 11px;
         text-align: center;
     }
-
-    .hero_section .btn_container {
+    .hero_section .btn_container{
         justify-content: center;
         text-align: center;
     }
-
-    .hero_section .row h3 {
+    .hero_section .row h3{
         font-size: 18px;
         text-align: center;
-        margin-bottom: 0;
+        margin-bottom: 0px;
     }
-
-    .hero_section .row h3::after {
-        width: 0;
+    .hero_section .row h3::after{
+        width: 0px;
     }
-
-    .hero_section .btn_container button {
+    .hero_section .btn_container button{
         width: 100px;
         height: 43px;
         font-size: 15px;
         text-align: center;
     }
-
-    .hero_section img {
+    .hero_section img{
         width: 60%;
         margin-top: 20px;
     }
 }
-
-/* Skills Section */
-.skills {
-    padding: 60px 0;
-}
-
-.skills .section-title {
-    font-size: 36px;
-    color: white;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.skills__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.skills__data {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.skills__names {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.skills__icon {
-    font-size: 24px;
-    color: white;
-    margin-right: 10px;
-}
-
-.skills__name {
-    font-size: 18px;
-    color: white;
-}
-
-.skills__bar {
-    flex: 1;
-    height: 8px;
-    background: var(--secondary-color);
-    margin: 0 10px;
-}
-
-.skills__html {
-    width: 70%;
-    background: var(--pink-color);
-}
-
-.skills__css {
-    width: 85%;
-    background: var(--pink-color);
-}
-
-.skills__python {
-    width: 85%;
-    background: var(--pink-color);
-}
-
-.skills__react {
-    width: 85%;
-    background: var(--pink-color);
-}
-
-.skills__percentage {
-    font-size: 16px;
-    color: white;
-}
-
-.skills__img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
