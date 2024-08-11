@@ -366,24 +366,73 @@ canvas.particles-js-canvas-el{
 }
 
 /* ===== CONTACT =====*/
-.contact__input{
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
+.contact {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
 }
-.contact__button{
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
 }
+
+.contact__box {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.contact__icon-box {
+  background-color: #0077b5; /* LinkedIn color */
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.contact__icon {
+  font-size: 2rem;
+}
+
+.contact__info {
+  flex: 1;
+}
+
+.contact__title {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.contact__link {
+  font-size: 1rem;
+  color: #0077b5; /* LinkedIn color */
+  text-decoration: none;
+}
+
+.contact__link:hover {
+  text-decoration: underline;
+}
+
+.contact__text {
+  font-size: 1rem;
+  color: #333;
+}
+
+
 
 /* ===== FOOTER =====*/
 .footer{
