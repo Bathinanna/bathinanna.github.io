@@ -1,4 +1,4 @@
-this portfolio is building using following structure
+this portfolio is build using following structure
 Tree
 ├── style
 │   └── style.css
