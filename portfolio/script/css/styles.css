@@ -294,6 +294,7 @@ canvas.particles-js-canvas-el{
 }
 
 /* ===== ABOUT =====*/
+/* ===== ABOUT =====*/
 .about__container{
   row-gap: 2rem;
   text-align: center;
@@ -305,9 +306,21 @@ canvas.particles-js-canvas-el{
   justify-self: center;
 }
 .about__img img{
-  width: 200px;
-  border-radius: .5rem;
+  width: 200px; /* or any other size */
+  height: 200px; /* same as width for a perfect circle */
+  border-radius: 50%; /* makes the image circular */
 }
+
+/* ===== HOME =====*/
+.home__img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 295px; /* adjust to fit the design */
+  height: 295px; /* same as width for a perfect circle */
+  border-radius: 50%; /* makes the image circular */
+}
+
 
 /* ===== SKILLS =====*/
 .skills__container{
