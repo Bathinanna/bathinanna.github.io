@@ -4,17 +4,22 @@
     --pink-color: #f87652;
     --secondary-color: #bbbbbb;
 }
+
 *{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: var(--background-color) !important;
-;
 }
+
 h1,h2,h3,h4,h5,h6,p,span,td,a{
     cursor: pointer;
 }
+
 canvas.particles-js-canvas-el{
     position: absolute;
     height: 100% !important;
@@ -26,102 +31,140 @@ canvas.particles-js-canvas-el{
     margin: 0px;
 }
 
-.hero_section .row{
+.hero_section {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
-.hero_section .row h1,h2,h3,p{
+
+.hero_section .container {
+    display: flex;
+    align-items: center;
+}
+
+.hero_section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero_section .col-lg-6, .hero_section .col-md-6, .hero_section .col-ms-12, .hero_section .col-xs-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_section h1,h2,h3,p{
     color: white;
 }
-.hero_section .row h3{
-    font-size: 19px;
-    font-weight: 30px;
-    margin-bottom: 15px;
 
+.hero_section h3{
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    position: relative;
 }
-.hero_section .row h3::after{
+
+.hero_section h3::after{
     content: '';
     position: absolute;
-    text-align: center;
     top: 10px;
+    left: 0;
     width: 90px;
     height: 2px;
     background-color: white;
-    margin-left: 6px;
 }
-.hero_section .row h1{
+
+.hero_section h1{
     font-size: 65px;
     font-weight: 800;
-
-}.hero_section .row h2{
-    font-size: 20px;
-    font-weight: 100;
-    margin: 8px 0px;
+    margin-bottom: 15px;
 }
-.hero_section .row p{
+
+.hero_section h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
+.hero_section p{
     font-size: 13px;
     margin-top: 13px;
     line-height: 21px;
     color: var(--secondary-color);
 }
-.hero_section .row button{
+
+.hero_section .btn_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hero_section button {
     border-radius: 10px;
     font-size: 19px;
     color: white;
     background-color: var(--pink-color);
     border: 3px solid var(--pink-color);
-    width: 113px;
+    width: auto;
+    padding: 10px 20px;
     font-family: 'Poppins', sans-serif;
-    margin-top: 10px;
-}
-.hero_section .row button:hover{
-    animation: swing;
-    animation-duration: 0.5s;
-    background: white;
-    color: black;
-    border-color: white;
-}
-.hero_section .row img{
-    width: 80%;
-    border-radius: 50%;
 }
 
+.hero_section button:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero_section img{
+    width: 80%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Media queries for responsive design */
 @media (max-width: 1200px) and (min-width: 993px){
-    .hero_section .row h1{
+    .hero_section h1{
         font-size: 58px;
     }
 }
+
 @media (max-width: 993px) and (min-width: 763px){
-    .hero_section .row h1 {
+    .hero_section h1 {
         font-size: 42px;
     }
-    .hero_section .row h2{
+    .hero_section h2{
         font-size: 15px;
     }
-    .hero_section .row p{
+    .hero_section p{
         font-size: 11px;
     }
-    .hero_section .row h3{
+    .hero_section h3{
         font-size: 15px;
     }
-    .hero_section .row button{
+    .hero_section button{
         font-size: 15px;
     }
 }
+
 @media (max-width: 763px) and (min-width: 500px){
     .hero_section {
         margin: 55px 0px;
     }
-    .hero_section .row h1 {
+    .hero_section h1 {
         font-size: 46px;
         text-align: center;
     }
-    .hero_section .row h2{
+    .hero_section h2{
         font-size: 15px;
         text-align: center;
     }
-    .hero_section .row p{
+    .hero_section p{
         font-size: 11px;
         text-align: center;
     }
@@ -129,22 +172,42 @@ canvas.particles-js-canvas-el{
         justify-content: center;
         text-align: center;
     }
-    .hero_section .row h3{
+    .hero_section h3{
         font-size: 18px;
         text-align: center;
         margin-bottom: 0px;
     }
-    .hero_section .row h3::after{
+    .hero_section h3::after{
         width: 0px;
     }
     .hero_section .btn_container button{
-        width: 100px;
+        width: auto;
         height: 43px;
         font-size: 15px;
         text-align: center;
+        padding: 10px;
     }
     .hero_section img{
         width: 60%;
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .hero_section h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+    .hero_section h2{
+        font-size: 13px;
+        text-align: center;
+    }
+    .hero_section p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .hero_section img{
+        width: 55%;
+        margin-top: 15px;
     }
 }
