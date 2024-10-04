@@ -28,6 +28,7 @@
         body {
             background-color: #EAEAEA; /* Uniform background color */
             color: #333333; /* General text color */
+            font-family: Arial, sans-serif; /* Change font for better readability */
         }
 
         .hero_section h1 span {
@@ -43,6 +44,9 @@
             margin-top: 40px;
             padding: 20px;
             text-align: center;
+            background-color: #FFFFFF; /* White background for contrast */
+            border: 1px solid #CCCCCC; /* Light border */
+            border-radius: 5px; /* Rounded corners */
         }
 
         .contact-info-section p {
@@ -58,6 +62,9 @@
         .introduction-section {
             padding: 40px;
             margin-top: 40px;
+            background-color: #FFFFFF; /* White background for contrast */
+            border: 1px solid #CCCCCC; /* Light border */
+            border-radius: 5px; /* Rounded corners */
         }
 
         .introduction-section ul {
@@ -90,6 +97,14 @@
         /* Title color */
         .introduction-section h3 {
             color: #007BFF; /* Blue color for titles */
+            border-bottom: 2px solid #007BFF; /* Bottom border for titles */
+            padding-bottom: 10px; /* Padding below titles */
+        }
+
+        /* Divider style */
+        .section-divider {
+            border-top: 2px solid #007BFF; /* Divider color */
+            margin: 40px 0; /* Spacing around the divider */
         }
     </style>
 </head>
@@ -110,7 +125,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
                     <center>
-                        <img src="./img/kiyo.jpg" alt="">
+                        <img src="./img/kiyo.jpg" alt="" style="max-width: 100%; height: auto;">
                     </center>
                 </div>
             </div>
@@ -129,6 +144,8 @@
         </div>
     </section>
 
+    <div class="section-divider"></div> <!-- Divider -->
+
     <!-- Professional Summary & Projects -->
     <section id="introduction" class="introduction-section">
         <div class="container">
@@ -140,6 +157,8 @@
                 <li>Learning Flutter and Dart for mobile app development.</li>
                 <li>Available for remote opportunities—short or long-term roles.</li>
             </ul>
+
+            <div class="section-divider"></div> <!-- Divider -->
 
             <h3>Projects</h3>
             <ul>
