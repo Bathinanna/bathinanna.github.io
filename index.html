@@ -26,13 +26,13 @@
 
     <style>
         body {
-            background-color: #EAEAEA; /* Uniform background color */
-            color: #333333; /* General text color */
-            font-family: Arial, sans-serif; /* Change font for better readability */
+            background-color: #F4F4F4; /* Soft light gray */
+            color: #333333; /* Dark gray for text */
+            font-family: 'Arial', sans-serif; /* Clean font for readability */
         }
 
         .hero_section h1 span {
-            color: #FF6F61; /* Highlighted text color */
+            color: #FF6F61; /* Accent color for highlighted text */
         }
 
         .btn_container .btn {
@@ -40,12 +40,12 @@
             margin-bottom: 10px;
         }
 
-        .contact-info-section {
+        .contact-info-section,
+        .introduction-section {
             margin-top: 40px;
             padding: 20px;
-            text-align: center;
-            background-color: #FFFFFF; /* White background for contrast */
-            border: 1px solid #CCCCCC; /* Light border */
+            background-color: #FFFFFF; /* White background for sections */
+            border: 1px solid #CCCCCC; /* Light border for contrast */
             border-radius: 5px; /* Rounded corners */
         }
 
@@ -55,16 +55,14 @@
         }
 
         .contact-info-section a {
-            color: #FF6F61; /* Updated link color */
+            color: #007BFF; /* Bright blue for links */
             text-decoration: none;
         }
 
-        .introduction-section {
-            padding: 40px;
-            margin-top: 40px;
-            background-color: #FFFFFF; /* White background for contrast */
-            border: 1px solid #CCCCCC; /* Light border */
-            border-radius: 5px; /* Rounded corners */
+        .introduction-section h3 {
+            color: #007BFF; /* Bright blue for titles */
+            border-bottom: 2px solid #007BFF; /* Underline for titles */
+            padding-bottom: 10px; /* Padding below titles */
         }
 
         .introduction-section ul {
@@ -77,34 +75,25 @@
             font-size: 18px;
         }
 
-        /* Ensure buttons are on one line */
-        .btn_container {
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 10px;
-        }
-
         .btn-container .btn-light {
-            background-color: #A2DFF7; /* Soft Blue for default button */
-            color: #333333; /* Dark text on buttons for readability */
+            background-color: #A2DFF7; /* Soft blue for default button */
+            color: #333333; /* Dark text for readability */
         }
 
         .btn-container .btn-secondary {
-            background-color: #FF8C00; /* Deep Orange for secondary button */
-            color: #FFFFFF; /* White text on buttons for contrast */
-        }
-
-        /* Title color */
-        .introduction-section h3 {
-            color: #007BFF; /* Blue color for titles */
-            border-bottom: 2px solid #007BFF; /* Bottom border for titles */
-            padding-bottom: 10px; /* Padding below titles */
+            background-color: #FF8C00; /* Deep orange for secondary button */
+            color: #FFFFFF; /* White text for contrast */
         }
 
         /* Divider style */
         .section-divider {
             border-top: 2px solid #007BFF; /* Divider color */
             margin: 40px 0; /* Spacing around the divider */
+        }
+
+        img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -125,7 +114,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
                     <center>
-                        <img src="./img/kiyo.jpg" alt="" style="max-width: 100%; height: auto;">
+                        <img src="./img/kiyo.jpg" alt="">
                     </center>
                 </div>
             </div>
